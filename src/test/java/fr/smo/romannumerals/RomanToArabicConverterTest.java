@@ -56,6 +56,6 @@ public class RomanToArabicConverterTest {
 
     @Test
     public void testRomanToArabicConversion() {
-        assertThat(new RomanNumeral(roman).convertToArabic()).as("RomanSimpleForm numeral => " + roman).isEqualTo(expectedArabic);
+        assertThat(Roman.convertToArabic(roman)).as("RomanSimpleForm numeral => " + roman).isEqualTo(expectedArabic);
     }
 }
