@@ -6,21 +6,22 @@ import org.junit.runners.Parameterized;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-
+/**
+ * Created by monteillet on 21/08/2015.
+ */
 @RunWith(Parameterized.class)
-public class RomanToArabicConverterTest extends AbstractTest {
-
+public class ArabicToRomanConverterTest  extends AbstractTest{
 
     private String roman;
     private int arabic;
 
-    public RomanToArabicConverterTest(String roman, int arabic) {
+    public ArabicToRomanConverterTest(String roman, int arabic) {
         this.roman = roman;
         this.arabic = arabic;
     }
 
     @Test
     public void testRomanToArabicConversion() {
-        assertThat(Roman.convertToArabic(roman)).as("Roman numeral => " + roman).isEqualTo(arabic);
+        assertThat(Arabic.convertToRoman(arabic)).as("Arabic=> " + arabic).isEqualTo(roman);
     }
 }

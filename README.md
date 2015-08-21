@@ -4,5 +4,5 @@ The Romans wrote their numbers using letters; specifically the letters 'I' meani
 
 The symbols 'I', 'X', 'C', and 'M' can be repeated at most 3 times in a row. The symbols 'V', 'L', and 'D' can never be repeated. The '1' symbols ('I', 'X', and 'C') can only be subtracted from the 2 next highest values ('IV' and 'IX', 'XL' and 'XC', 'CD' and 'CM'). Only one subtraction can be made per numeral ('XC' is allowed, 'XXC' is not). The '5' symbols ('V', 'L', and 'D') can never be subtracted.
 
-The purpose of this kata is to implements a solution that converts Roman numeral to Arabic number and also Arabic number to Roman Numeral. This repository reprensents my Java solution.
+The purpose of this kata is to implements a solution that converts Roman numeral to Arabic number and also Arabic number to Roman Numeral. This repository represents my Java solution.
 

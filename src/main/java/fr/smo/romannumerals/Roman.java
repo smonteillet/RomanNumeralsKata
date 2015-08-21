@@ -5,7 +5,7 @@ import java.util.Map;
 
 public class Roman {
 
-    private static final Map<String, Integer> romans = getRomans();
+    private static final Map<String, Integer> ROMANS = getRomans();
 
     public static int convertToArabic(String roman) {
         roman = roman.trim();
@@ -13,8 +13,8 @@ public class Roman {
         int arabic = 0;
         int romanLength = roman.length();
         for (int cursor = 0; cursor < romanLength; cursor++) {
-            int firstValue = romans.get(roman.substring(cursor, cursor + 1));
-            int secondValue = (romanLength <= cursor + 1) ? 0 : romans.get(roman.substring(cursor + 1, cursor + 2));
+            int firstValue = ROMANS.get(roman.substring(cursor, cursor + 1));
+            int secondValue = (romanLength <= cursor + 1) ? 0 : ROMANS.get(roman.substring(cursor + 1, cursor + 2));
             arabic += (firstValue >= secondValue) ? firstValue : (firstValue * -1);
         }
         return arabic;
